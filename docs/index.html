@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pisos · Estudio</title>
+  <meta name="description" content="Estudia el temario de camarera de pisos: resúmenes, tests y tarjetas, sin conexión.">
+  <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1f1d" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Pisos">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="back" id="back" aria-label="Volver" hidden>‹</button>
+    <h1 id="title">Pisos</h1>
+    <button class="icon-btn" id="install" hidden>Instalar</button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Secciones">
+    <a href="#/" data-tab="inicio"><span class="ti">⌂</span>Inicio</a>
+    <a href="#/temario" data-tab="temario"><span class="ti">☰</span>Temario</a>
+    <a href="#/test" data-tab="test"><span class="ti">✓</span>Test</a>
+    <a href="#/tarjetas" data-tab="tarjetas"><span class="ti">❏</span>Tarjetas</a>
+  </nav>
+
+  <script src="data/temario.js"></script>
+  <script src="data/preguntas.js"></script>
+  <script src="data/tarjetas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
